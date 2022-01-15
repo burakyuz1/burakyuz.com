@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 1024px) {
     body {
         background-color: #222222;
+        box-sizing: border-box;
+
     }
 
     .side-bar {
@@ -53,6 +55,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 500px) {
+
+    body {
+        background-image: none;
+    }
+
     .about-me-inner {
         flex-direction: column;
     }
@@ -124,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     opacity: 0;
     width: 330px;
-    height: 100vh;
+    height: 100%!important;
     background-color: #444444;
     top: 0;
     right: 0;
@@ -137,13 +144,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .right-panel-content {
     text-align: center;
-    margin-top: 30%;
+    height: 100%!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
 
 .social-links-mobile {
-    margin-top: 3em;
+    /* margin-top: 3em; */
     list-style-type: none;
     color: #f2f2f2;
 }
@@ -159,12 +169,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .right-panel-content .rights {
 
-    margin-top: 25% !important;
+    margin-top: 0!important;
+}
+
+.right-panel-content .social-links {
+
+    margin-top: 0!important;
 }
 
 .right-panel-content .download-cv {
 
-    margin-top: 8% !important;
+    margin-top: 0!important;
 }
 
 
