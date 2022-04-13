@@ -1,5 +1,5 @@
 # PersonalWebsite
-https://burakyuz1.github.io/PersonalWebsite/
+https://burakyuz.com
 
 
 Pure CSS and Vanilla.js
